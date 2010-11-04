@@ -1,6 +1,42 @@
 <besoins>
-	<b>
-		<d>Domaine</d>
-		<t>L'application doit pouvoir manger des chat grâce à un système d'ornitorynques !</t>
-	</b>
+    <domaines>
+	<d>
+	<t>Configuration</t><!-- domaine -->
+	<cas>
+		<gr>
+		    <n> Effectuer des opération sur les éléments </n>
+		    <c>Ajouter des éléments physiques</c>
+		    <c>Paramétrer des éléments</c>
+		    <c>Supprimer des éléments</c>
+		    <c>Lier des éléments entre eux</c>
+		    <c>Déplacer des éléments</c>
+		</gr>
+		<c>Visualiser des éléments</c>
+		<gr>
+		    <n>Persistance de la configuration</n>
+		    <c>Sauvegarder une configuration</c>
+		    <c>Charger une configuration</c>
+		</gr>
+	</cas></d> 
+	</d>
+	<d>
+	    <t>Simulation</t>
+	    <cas>
+		<c>Stopper le temps</c>
+		<c>Démarrer le temps</c>
+		<c>Mettre à jour l'état des des différents éléments</c>
+		<c>Paraméter chaque élément</c>
+		<c>Sauvegarder la simulation</c>
+		<c>Ajouter des évènements</c>
+		<c>Modifier des évènements</c>
+		<c>Supprimer des évènements</c>
+		<c>Pouvoir agir sur les éléments manuellement</c>
+		<gr>
+		    <n>Persistance de la simulation</n>
+		    <c>Sauvegarder une simulation</c>
+		    <c>Charger une simulation</c>
+		</gr>
+	    </cas>
+	</d>
+    </domaines>
 </besoins>
