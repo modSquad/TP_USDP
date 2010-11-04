@@ -12,16 +12,18 @@ def getText(nodelist):
 
 dom = parse('data.xml')
 
-needs = dom.getElementsByTagName('b')
-parsedNeeds = []
+domains = dom.getElementsByTagName('d')
 
-for n in needs:
-	domains = n.getElementsByTagName('d')
-	titles = n.getElementsByTagName('t')
+for d in domains:
+	title = getText(d.getElementsByTagName('t')[0])
 
-	for d in domains:
-		print getText(d.childNodes)
+	groups = dom.getElementsByTagName('gr')
+	for g in groups:
+		name = getText(g.getElementsByTagName('n')[0])
+		cases = g.getElementsByTagName('c')
+		parsedCases = []
 
-	for t in titles:
-		print getText(t.childNodes)
+		for c in cases:
+			parsedCases.append(c.childNodes)
 
+		print name, ':', parsedCases
