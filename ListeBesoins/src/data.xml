@@ -14,10 +14,22 @@
 		<c>Visualiser des éléments</c>
 		<c>Changer de niveau de granularité sur la visualisation</c>
 		<gr>
+		    <n>Effectuer des actions sur l'historique</n>
+		    <c>Annuler la dernière actiokn</c>
+		    <c>Annuler la dernière annulation</c>
+		</gr>
+		<gr>
 		    <n>Persistance de la configuration</n>
 		    <c>Sauvegarder une configuration</c>
 		    <c>Charger une configuration</c>
 		</gr>
+	</cas>
+	</d>
+	<d>
+	<t>Maintenance</t>
+	<cas>
+	<c>Mettre à jour le logiciel </c>
+	<c>Créer une ficher électronique d'intervention</c>
 	</cas>
 	</d>
 	<d>
@@ -27,8 +39,10 @@
 		<n>Gérer l'avancement de la simulation</n>
 		<c>Stopper le temps</c>
 		<c>Démarrer le temps</c>
+		<c>Changer la vitesse de la simulation</c>
 	    </gr>
 	    <c>Pouvoir agir sur les éléments manuellement</c>
+	    <c>Pouvoir mettre la simulation en mode automatique</c>
 	    <gr>
 		<n>Effectuer des opérations sur le évènements</n>
 		<c>Ajouter des évènements</c>
@@ -46,7 +60,38 @@
 		<c>Sauvegarder une simulation</c>
 		<c>Charger une simulation</c>
 	    </gr>
+	    <gr>
+		<n>Effectuer des actions sur l'historique</n>
+		<c>Annuler la dernière action</c>
+		<c>Annuler la dernière annulation</c>
+	    </gr>
 	    </cas>
+	</d>
+	<d>
+	    <t>Réclamations</t>
+	    <cas>
+		<gr>
+		    <n>Gérer les réclamations</n>
+		    <c>Créer un dossier de litige pour un client lésé</c>
+		    <c>Attribuer un identifiant et un mot de passe au client</c>
+		    <c>Visualiser le dossier de litige pour un client</c>
+		</gr>
+		<c>Rechercher la position d'un bagage</c>
+		<c>Visualiser le trajet d'un bagage</c>
+		<c>Trouver le moment où une erreur est survenue</c>
+	    </cas>
+	</d>
+	<d>
+	<t>Exploitation</t>
+	    <cas>
+	    <c>Pouvoir agir sur les éléments manuellement</c>
+	    <c>Pouvoir mettre le système en mode automatique</c>
+	    <gr>
+		<n>Visualiser le système</n>
+		<c>Visualiser les éléments</c>
+		<c>Visualiser l'état du système</c>
+	    </gr>
+	</cas>
 	</d>
     </domaines>
 </besoins>
