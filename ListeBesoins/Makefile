@@ -1,2 +1,4 @@
-all:
-	cd src && ./ListeBesoins.py && pdflatex ListeBesoins.tex && mv ListeBesoins.pdf ../ && cd ..
+SRC_PATH=src/
+
+all: ${SRC_PATH}/*
+	cd ${SRC_PATH} && python Export.py
