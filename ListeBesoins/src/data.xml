@@ -4,38 +4,48 @@
 	<t>Configuration</t><!-- domaine -->
 	<cas>
 		<gr>
-		    <n> Effectuer des opération sur les éléments </n>
-		    <c>Ajouter des éléments physiques</c>
+		    <n>Effectuer des opération sur les éléments </n>
+		    <c>Ajouter des éléments</c>
 		    <c>Paramétrer des éléments</c>
 		    <c>Supprimer des éléments</c>
 		    <c>Lier des éléments entre eux</c>
 		    <c>Déplacer des éléments</c>
 		</gr>
 		<c>Visualiser des éléments</c>
+		<c>Changer de niveau de granularité sur la visualisation</c>
 		<gr>
 		    <n>Persistance de la configuration</n>
 		    <c>Sauvegarder une configuration</c>
 		    <c>Charger une configuration</c>
 		</gr>
-	</cas></d> 
+	</cas>
 	</d>
 	<d>
 	    <t>Simulation</t>
 	    <cas>
+	    <gr>
+		<n>Gérer l'avancement de la simulation</n>
 		<c>Stopper le temps</c>
 		<c>Démarrer le temps</c>
-		<c>Mettre à jour l'état des des différents éléments</c>
-		<c>Paraméter chaque élément</c>
-		<c>Sauvegarder la simulation</c>
+	    </gr>
+	    <c>Pouvoir agir sur les éléments manuellement</c>
+	    <gr>
+		<n>Effectuer des opérations sur le évènements</n>
 		<c>Ajouter des évènements</c>
 		<c>Modifier des évènements</c>
 		<c>Supprimer des évènements</c>
-		<c>Pouvoir agir sur les éléments manuellement</c>
-		<gr>
-		    <n>Persistance de la simulation</n>
-		    <c>Sauvegarder une simulation</c>
-		    <c>Charger une simulation</c>
-		</gr>
+	    </gr>
+	    <gr>
+		<n>Visualiser une simulation</n>
+		<c>Visualiser des évènements</c>
+		<c>Visualiser les éléments</c>
+		<c>Visualiser l'état du système</c>
+	    </gr>
+	    <gr>
+		<n>Persistance de la simulation</n>
+		<c>Sauvegarder une simulation</c>
+		<c>Charger une simulation</c>
+	    </gr>
 	    </cas>
 	</d>
     </domaines>
