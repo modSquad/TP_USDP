@@ -13,17 +13,48 @@ def getText(nodelist):
 dom = parse('data.xml')
 
 domains = dom.getElementsByTagName('d')
+parsedDomains = []
 
 for d in domains:
-	title = getText(d.getElementsByTagName('t')[0])
+	title = d.getElementsByTagName('t')[0].childNodes[0].data
+	title.strip()
+
+	aloneCases = d.getElementsByTagName('c')
+	parsedAloneCases = []
+	for a in aloneCases:
+		if a.parentNode.nodeName != "gr":
+			parsedAloneCases.append(a.childNodes[0].data)
 
 	groups = dom.getElementsByTagName('gr')
+	parsedGroups = []
 	for g in groups:
-		name = getText(g.getElementsByTagName('n')[0])
+		name = g.getElementsByTagName('n')[0].childNodes[0].data
 		cases = g.getElementsByTagName('c')
 		parsedCases = []
 
 		for c in cases:
-			parsedCases.append(c.childNodes)
+			parsedCases.append(c.childNodes[0].data)
 
-		print name, ':', parsedCases
+		parsedGroups.append((name, parsedCases))
+
+	parsedDomains.append((title, parsedAloneCases, parsedGroups))
+
+# [ (Nom du domaine, [Cas sans groupe], (Titre, [Cas])) ]
+for d in parsedDomains:
+	domainString = ""
+	domainString += "\domainNeeds{" + d[0] + "}"
+
+	domainString += "\n{\n\\begin{itemize}\n"
+	for c in d[1]:domainString += "\t\\item " + c + "\n"
+	domainString += "\\end{itemize}}\n"
+
+	domainString += "{\n"
+	for g in d[2]:
+		domainString += "\paragraph{" + g[0] + "}\n"
+		domainString += "\\begin{itemize}\n"
+		for c in g[1]: domainString += "\t\\item " + c + "\n"
+		domainString += "\\end{itemize}\n\n"
+
+	domainString += "}\n\n"
+	print domainString
+
