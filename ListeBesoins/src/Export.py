@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import os
+import sys
 import codecs
 from xml.dom.minidom import parse, parseString
 
@@ -58,7 +58,7 @@ for d in parsedDomains:
 
 	domainString += "}\n\n"
 
-	f=codecs.open(sys.argv[1], encoding="utf-8", mode="w")
-	f.write(domainString)
-	f.close()
+f=codecs.open(sys.argv[1], encoding="utf-8", mode="w")
+f.write(domainString)
+f.close()
 
