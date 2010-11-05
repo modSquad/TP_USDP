@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+import os
+import codecs
 from xml.dom.minidom import parse, parseString
 
 def getText(nodelist):
@@ -56,5 +57,8 @@ for d in parsedDomains:
 		domainString += "\\end{itemize}\n\n"
 
 	domainString += "}\n\n"
-	print domainString
+
+	f=codecs.open(sys.argv[1], encoding="utf-8", mode="w")
+	f.write(domainString)
+	f.close()
 
