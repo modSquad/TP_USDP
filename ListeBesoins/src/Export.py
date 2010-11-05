@@ -39,15 +39,16 @@ for d in domains:
 		parsedGroups.append((name, parsedCases))
 
 	parsedDomains.append((title, parsedAloneCases, parsedGroups))
+	
+domainString = ""
 
 # [ (Nom du domaine, [Cas sans groupe], (Titre, [Cas])) ]
 for d in parsedDomains:
-	domainString = ""
 	domainString += "\domainNeeds{" + d[0] + "}"
 
-	domainString += "\n{\n\\begin{itemize}\n"
-	for c in d[1]:domainString += "\t\\item " + c + "\n"
-	domainString += "\\end{itemize}}\n"
+	domainString += "\n{\n"
+	for c in d[1]:domainString += "\t\\paragraph{ " + c + "}\n"
+	domainString += "}\n"
 
 	domainString += "{\n"
 	for g in d[2]:

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.10.3)  5 NOV 2010 15:12
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.10.3)  5 NOV 2010 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -600,11 +600,10 @@ LaTeX Info: Redefining \nameref on input line 4.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (./liste-besoins.tex
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
 
  []
 
-) AED: lastpage setting LastPage 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -614,30 +613,50 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 300--300
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 375--375
+
+ []
+
+[5]) AED: lastpage setting LastPage 
+[6]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 6.
-
-(./tmp//main.aux)
+ (./tmp//main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 6.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 6280 strings out of 493738
- 92334 string characters out of 3143023
- 190019 words of memory out of 3000000
- 9451 multiletter control sequences out of 15000+200000
+ 6346 strings out of 493738
+ 93061 string characters out of 3143023
+ 191019 words of memory out of 3000000
+ 9457 multiletter control sequences out of 15000+200000
  5206 words of font info for 19 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 33i,10n,43p,254b,360s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,11n,43p,254b,427s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on ./tmp//main.pdf (1 page, 51826 bytes).
+Output written on ./tmp//main.pdf (6 pages, 67111 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 148 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
